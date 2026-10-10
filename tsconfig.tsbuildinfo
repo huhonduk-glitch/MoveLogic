@@ -1,1 +1,0 @@
-{"root":["./src/App.tsx","./src/config.ts","./src/main.tsx","./src/placeholderExercises.ts","./src/components/Layout.tsx","./src/components/TabBar.tsx","./src/pages/ExerciseDetailPage.tsx","./src/pages/ExerciseListPage.tsx","./src/pages/HomePage.tsx","./src/pages/MyRoutinePage.tsx","./src/pages/NotFoundPage.tsx","./vite.config.ts"],"version":"5.9.3"}
