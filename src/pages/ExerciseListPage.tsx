@@ -1,22 +1,30 @@
 import { Link } from 'react-router-dom'
-import { placeholderExercises } from '../placeholderExercises'
+import { exercises } from '../exercises'
 
 export default function ExerciseListPage() {
   return (
     <section className="page">
       <h1>운동 목록</h1>
-      <p className="muted">준비 중 — 지금은 화면 이동 확인용 예시만 있어요.</p>
 
-      <ul className="card-list">
-        {placeholderExercises.map((ex) => (
-          <li key={ex.id}>
-            <Link to={`/exercises/${ex.id}`} className="card card-link">
-              <strong>{ex.name}</strong>
-              <span className="muted">자세히 보기 →</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {exercises.length === 0 ? (
+        <div className="card empty">
+          <p>아직 공개된 운동이 없어요.</p>
+          <span className="muted">근거 확인을 마친 운동부터 차례로 올라와요.</span>
+        </div>
+      ) : (
+        <ul className="card-list">
+          {exercises.map((ex) => (
+            <li key={ex.id}>
+              <Link to={`/exercises/${ex.id}`} className="card card-link">
+                <strong>{ex.nameKo}</strong>
+                <span className="muted">
+                  {[ex.category, ex.level].filter(Boolean).join(' · ')}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }
