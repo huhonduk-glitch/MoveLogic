@@ -9,3 +9,4 @@
 | vite, @vitejs/plugin-react | 개발 서버·빌드 | MIT |
 | typescript | 타입 검사 | Apache-2.0 |
 | @types/react, @types/react-dom | 타입 정의 | MIT |
+| exceljs (개발용) | 엑셀 → JSON 변환 스크립트. 앱에는 포함 안 됨 | MIT |
