@@ -1,0 +1,22 @@
+{
+  "name": "무브로직",
+  "slug": "movelogic",
+  "tagline": "왜 하는지 이해하는 운동 가이드",
+  "story": "확인필요",
+  "target": [
+    "확인필요"
+  ],
+  "tags": [
+    "수업"
+  ],
+  "status": "개발 중",
+  "public": true,
+  "appUrl": "https://move-logic-five.vercel.app",
+  "videoUrl": "확인필요",
+  "preview": "images/preview.gif",
+  "useCases": [
+    "확인필요"
+  ],
+  "lesson": "",
+  "order": 5
+}
